@@ -1,5 +1,6 @@
 body{
     margin: 0%;
+    overflow: hidden;
 
 }
 h3{
@@ -209,7 +210,7 @@ a{
 
 #message1{
     width:80%;
-    height:88%;
+    height:575px;
     float: right;
     background-color: transparent;
     overflow-y: scroll;
@@ -325,6 +326,84 @@ span{
     100%{
         opacity: 1;
         transform: scale(1);
+    }
+}
+@media(max-height:950px){
+    #message1{
+        width:80%;
+        height:825px;
+    }
+}
+@media(max-height:900px){
+    #message1{
+        width:80%;
+        height:775px;
+    }
+}
+@media(max-height:850px){
+    #message1{
+        width:80%;
+        height:725px;
+    }
+}
+@media(max-height:800px){
+    #message1{
+        width:80%;
+        height:675px;
+    }
+}
+@media(max-height:750px){
+    #message1{
+        width:80%;
+        height:625px;
+    }
+}
+@media(max-height:700px){
+    #message1{
+        width:80%;
+        height:575px;
+    }
+}
+@media(max-height:650px){
+    #message1{
+        width:80%;
+        height:525px;
+    }
+}
+@media(max-height:600px){
+    #message1{
+        width:80%;
+        height:475px;
+    }
+}
+@media(max-height:550px){
+    #message1{
+        width:80%;
+        height:425px;
+    }
+}
+@media(max-height:500px){
+    #message1{
+        width:80%;
+        height:375px;
+    }
+}
+@media(max-height:450px){
+    #message1{
+        width:80%;
+        height:325px;
+    }
+}
+@media(max-height:300px){
+    #message1{
+        width:80%;
+        height:275px;
+    }
+}
+@media(max-height:250px){
+    #message1{
+        width:80%;
+        height:225px;
     }
 }
 
