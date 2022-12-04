@@ -37,8 +37,6 @@
     }
     .form1{
         float: right;
-        display: flex;
-        flex-direction: row;
         border-radius: 50px;
         position: fixed;
         bottom:0px;
@@ -48,7 +46,7 @@
         margin: 10px 5%;
         border:1px solid rgb(114, 114, 114)
     }
-    #send{
+    .send{
         height:55px;
         width: 85px;
         border-radius: 70px;
@@ -65,6 +63,7 @@
         font-size: 20px;
         width:85%;
         background-color: rgb(255, 255, 255);
+        margin-left: 85px;
     }
     #upload{
         height:45px;
@@ -75,7 +74,49 @@
         background-color: rgb(255, 255, 255);
         color:rgb(36, 105, 252) ;
         font-size: 35px;
+        position: absolute;
     }
+    .upload-file i{
+        font-size: 200px;
+    color: rgb(189, 189, 189);
+    margin: 2% 30%;
+    }
+    .boxclc{
+        width:100px;
+    height:33.3px;
+    background-color: white;
+    border:2px solid rgb(54, 86, 145);
+    color:rgb(54, 86, 145);
+    font-size: 20px;
+    float: right;
+    margin: 2%;
+    margin-top: 15%;
+    }
+    #label{
+        width:130px;
+        height:30px;
+        background-color: rgb(54, 86, 145);;
+        margin-left:43% ;
+        border-radius: 30px;
+        color: rgb(255, 255, 255);
+        font-size: 22px;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 10px 5px 10px;
+    }
+    .done{
+        width:100px;
+    height:33.3px;
+    background-color: white;
+    background-color:  rgb(54, 86, 145);;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    float: right;
+    margin: 2%;
+    border: 0ch;
+    margin-top: 15%;
+    }
+
     #ham{
         width:60px;
         height:60px;
@@ -93,14 +134,15 @@
     }
     .scroll{
         height:40px;
-        width: 40px;
-        position: absolute;
-        bottom: 100px;
-        right: 50px;
-        font-size: 30px;
-        border-radius: 100px;
-        border: 0px;
-        background-color: gray;
+    width: 150px;
+    position: absolute;
+    top: 75px;
+    right: 40%;
+    font-size: 13px;
+    border-radius: 100px;
+    border: 0px;
+    background-color: rgb(0, 140, 255);
+    color: white;
     }
     .scroll-rcv{
         height:40px;
@@ -246,8 +288,6 @@
 
     .form1{
         float: right;
-        display: flex;
-        flex-direction: row;
         border-radius: 50px;
         position: fixed;
         bottom:0px;
@@ -257,7 +297,7 @@
         margin: 10px 5%;
         border:1px solid rgb(114, 114, 114)
     }
-    #send{
+    .send{
         height:50px;
         width: 85px;
         border-radius: 70px;
@@ -269,7 +309,7 @@
     #text{
         height:35px;
         border-radius: 50px;
-        
+        margin-left: 75px;
         border: 0ch;
         font-size: 15px;
         width:85%;
@@ -283,7 +323,53 @@
         border: 0ch;
         background-color: rgb(255, 255, 255);
         color:rgb(36, 105, 252) ;
-        font-size: 25px;
+        font-size: 20px;
+        position: absolute;
+    }
+    .upload-file2 i{
+        font-size: 200px;
+    color: rgb(189, 189, 189);
+    margin: 2% 20%;
+    }
+    .upload-file i{
+        font-size: 200px;
+    color: rgb(189, 189, 189);
+    margin: 2% 20%;
+    }
+    .boxclc{
+        width:75px;
+    height:25px;
+    background-color: white;
+    border:2px solid rgb(54, 86, 145);
+    color:rgb(54, 86, 145);
+    font-size: 15px;
+    float: right;
+    margin: 5%;
+    margin-top: 30%;
+    }
+    #label{
+        width:100px;
+        height:30px;
+        background-color: rgb(54, 86, 145);;
+        margin-left:35% ;
+        border-radius: 30px;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 10px 0px 10px;
+    }
+    .done{
+        width:75px;
+    height:25px;
+    background-color: white;
+    background-color:  rgb(54, 86, 145);;
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    float: left;
+    margin: 10%;
+    border: 0ch;
+    margin-top: 20%;
     }
     #ham{
         width:60px;
@@ -326,24 +412,18 @@
         padding:25px 0px;
     }
     .scroll{
-        height:35px;
-        width: 35px;
-        position: absolute;
-        bottom: 75px;
-        right: 10px;
-        font-size: 30px;
-        border-radius: 100px;
-        border: 0px;
-        background-color: gray;
+        height:30px;
+    width: 130px;
+    position: absolute;
+    top: 75px;
+    right: 35%;
+    font-size: 10px;
+    border-radius: 100px;
+    border: 0px;
+    background-color: rgb(0, 140, 255);
+    color: white;
     }
-    .scroll-rcv{
-        height:35px;
-        width: 35px;
-        position: absolute;
-        bottom: 75px;
-        right: 10px;
-        font-size: 30px;
-    }
+
     .option{
         width:94%;
         text-align: left;
@@ -466,14 +546,21 @@
     }
     .scroll{
         height:30px;
-        width: 30px;
-        font-size: 25px;
+    width: 130px;
+    position: absolute;
+    top: 75px;
+    right: 30%;
+    font-size: 10px;
+    border-radius: 100px;
+    border: 0px;
+    background-color: rgb(0, 140, 255);
+    color: white;
     }
-    .scroll-rev{
-        height:30px;
-        width: 30px;
-        font-size: 25px;
+    .boxclc{
+        margin-top: 20%;
     }
+    
+      
     @media(max-height:1050px){
         #message1{
             width:100%;

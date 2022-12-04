@@ -1,7 +1,6 @@
 body{
     margin: 0%;
     overflow: hidden;
-
 }
 h3{
     position: absolute;
@@ -156,10 +155,14 @@ a{
     text-decoration: none;
     color: black;
 }
-
-.form1{
+#searchForm{
     display: flex;
     flex-direction: row;
+}
+.blurbody{
+    filter: none;
+}
+.form1{
     border-radius: 50px;
     position: fixed;
     bottom:0px;
@@ -176,12 +179,106 @@ a{
     margin: 2px;
     border: 0ch;
     background-color: rgb(255, 255, 255);
-    color:rgb(36, 105, 252) ;
+    color:rgb(54, 86, 145); ;
     font-size: 35px;
+    position: absolute;
 }
 .upload:hover{
     background-color: rgb(216, 216, 216);
     
+}
+.upload-bg{
+    width:100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+}
+#updir{
+    display:none;
+}
+.upload-bg2{
+    width:100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+}
+#updir2{
+    display:none;
+}
+.upload-file2{
+    width:90%;
+    height:75%;
+    margin:5% 5%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    opacity: 1;
+    z-index: 2;
+    border: 5px solid rgb(54, 86, 145);
+}
+.upload-file2 i{
+    font-size: 200px;
+    color: rgb(189, 189, 189);
+    margin: 2% 40%;
+}
+#blrdir{
+    filter: none;
+}
+.upload-file{
+    width:90%;
+    height:75%;
+    margin:5% 5%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    opacity: 1;
+    z-index: 2;
+    border: 5px solid rgb(54, 86, 145);
+}
+.upload-file i{
+    font-size: 200px;
+    color: rgb(189, 189, 189);
+    margin: 2% 40%;
+}
+.choose{
+    display: none;
+}
+#label{
+    width:130px;
+    height:30px;
+    background-color: rgb(54, 86, 145);;
+    margin-left:43% ;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px 5px 10px;
+}
+.boxclc{
+    width:100px;
+    height:33.3px;
+    background-color: white;
+    border:2px solid rgb(54, 86, 145);
+    color:rgb(54, 86, 145);
+    font-size: 20px;
+    float: right;
+    margin: 2%;
+    margin-top: 15%;
+}
+.done{
+    width:100px;
+    height:33.3px;
+    background-color: white;
+    background-color:  rgb(54, 86, 145);;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    float: right;
+    margin: 2%;
+    border: 0ch;
+    margin-top: 15%;
 }
 #text{
     height:45px;
@@ -191,11 +288,13 @@ a{
     font-size: 18px;
     width:85%;
     background-color: rgb(255, 255, 255);
+    margin-left: 82px;
 }
 #text:focus{
     outline: 0ch;
     color: black;
     background-color: white;
+
 }
 .send{
     height:55px;
@@ -288,30 +387,15 @@ span{
 
 .scroll{
     height:40px;
-    width: 40px;
+    width: 150px;
     position: absolute;
-    bottom: 100px;
-    right: 50px;
-    font-size: 30px;
+    top: 20px;
+    right: 35%;
+    font-size: 13px;
     border-radius: 100px;
     border: 0px;
-    background-color: gray;
-}
-.scroll-rcv{
-    height:40px;
-    width: 40px;
-    position: absolute;
-    bottom: 100px;
-    right: 50px;
-    font-size: 30px;
-    border-radius: 100px;
-    border: 0px;
-    background-color: rgb(20, 54, 117);
+    background-color: rgb(0, 140, 255);
     color: white;
-    animation-name: scroll;
-    animation-duration:1s;
-    animation-iteration-count:infinite ;
-    display: inherit;
 }
 @keyframes scroll {
     0%{
@@ -406,4 +490,3 @@ span{
         height:225px;
     }
 }
-
