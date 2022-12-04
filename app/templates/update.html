@@ -1,11 +1,11 @@
-  <div id="update">
+ <div id="update">
 
                 <div id="message1">
                     {% for message in msg %}
                         {%if message[0]==me%}
                             <div id="usermsg">
-                                <button id="delete" onclick="trashF({{message[2]}})"> <i class="fa fa-trash"></i> </button>
-                                <span><img id="profimg"src="/static/prof.jpg" alt=""><c id="name-user" class="name-user">{{message[0]}}</c></span>
+                              <button id="delete" onclick="trashF({{message[2]}})"> <i class="fa fa-trash"></i> </button>
+                                <span><img id="profimg"src="{{message[5]}}" alt=""><c id="name-user" class="name-user">{{message[0]}}</c></span>
                                 <div class="message">
                                     {{message[1]}}
                                 </div>
@@ -16,7 +16,7 @@
                             </div>
                         {%else%}
                             <div id="pblcmsg">
-                                <span><img id="profimg"src="/static/prof.jpg" alt=""><c id="name-users" class="name-user">{{message[0]}}</c></span>
+                                <span><img id="profimg"src="{{message[5]}}" alt=""><c id="name-users" class="name-user">{{message[0]}}</c></span>
                                 <div class="message">
                                     {{message[1]}}
                                 </div>
@@ -26,6 +26,6 @@
                         {%endif%}
 
                 {% endfor %}
-                    <button onclick='' id="scroll" class="scroll"><i class="fa fa-sort-down"></i></button>
+                <button onclick='' id="scroll" class="scroll"><i class="fa fa-sort-down"></i> New Message</button>
                 </div>
             </div>
