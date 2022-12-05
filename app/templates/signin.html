@@ -6,6 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <style>
+        .login-with-google-btn {
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 10px 14px 10px 40px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg);
+  background-color: #4285F4;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+  margin-top: 0px;
+}
+.login-with-google-btn:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.login-with-google-btn:active {
+  background-color: #eeeeee;
+}
+.login-with-google-btn:focus {
+  outline: none;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25), 0 0 0 3px #c8dafc;
+}
+.login-with-google-btn:disabled {
+  filter: grayscale(100%);
+  background-color: #ebebeb;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}
+body {
+  text-align: center;
+}
 
     </style>
     <body>
@@ -19,8 +54,14 @@
                 <input type="text" name="your_name" id="your_name" placeholder="Username or Email" required class="input">
                 <input type="password" name="your_pass" id="your_pass" placeholder="Password" required  class="input"><br>
                 <a href="/forgot_password"  class="right">Forgot Password</a><br>
-                <button type="submit" name="signin" id="signin" class="form-submit" value="Log in">Sign-In</button><br><br>
-                Don't have an account? <a href="/signup">Create Account</a><br>
+                <button type="submit" name="signin" id="signin" class="form-submit" value="Log in" >Sign-In</button>
+                        <br><br>OR<br><br>
+                <button onclick="window.location='/login_google'" type="button" class="login-with-google-btn" >
+                    Sign in with Google
+                </button>
+  
+                <br>
+                Don't have an account? <a href="/">Create Account</a><br>
                 </form>
                 
             </div>
