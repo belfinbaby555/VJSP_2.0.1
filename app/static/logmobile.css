@@ -74,4 +74,7 @@ button{
     padding:15 0 15 0px;
     width: 200px;
 }
+.login-with-google-btn {
+    font-size: 12px;
+}
 }
